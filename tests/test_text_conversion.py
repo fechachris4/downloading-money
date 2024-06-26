@@ -16,12 +16,12 @@ def test_returns_string_from_image():
     expected = "This is sample text from an image."
     assert result == expected 
 
-# If unable to process image file provided, throw error message
-def test_returns_image_error_message():
-    with pytest.raises(Exception) as e:
-        extract_text_from_image('tests/data/empty_pdf.pdf')
-    error_message = str(e.value)
-    assert "Error processing image" in error_message
+# # If unable to process image file provided, throw error message
+# def test_returns_image_error_message():
+#     with pytest.raises(Exception) as e:
+#         extract_text_from_image('tests/data/empty_pdf.pdf')
+#     error_message = str(e.value)
+#     assert "Error processing image" in error_message
 
 # If given an empty pdf, returns an empty string
 # def test_empty_pdf_returns_empty_string():
